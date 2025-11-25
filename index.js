@@ -1,10 +1,10 @@
 const express = require("express");
 const app = express();
-const { pool, testDB } = require("./db.js");
+const pgk = require("./db.js");
 
 //middleware
 app.use(express.json());
-testDB();
+
 
 const port = process.env.PORT || 5000;
 
